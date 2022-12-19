@@ -1,5 +1,5 @@
 //
-//  TimeCounter.swift
+//  TimerCounter.swift
 //  StateAndDataFlow
 //
 //  Created by Alexey Efimov on 14.12.2022.
@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-class TimeCounter: ObservableObject {
-    let objectWillChange = PassthroughSubject<TimeCounter, Never>()
+class TimerCounter: ObservableObject {
+    let objectWillChange = PassthroughSubject<TimerCounter, Never>()
     var counter = 3
     var buttonTitle = "Start"
     var timer: Timer?

@@ -13,8 +13,8 @@ struct StarterView: View {
     
     var body: some View {
         Group {
-            if userManager.isRegister {
-                ContentView()
+            if userManager.user.isRegistered {
+                TimerView()
             } else {
                 RegisterView()
             }
